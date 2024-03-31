@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useRef, useState } from 'react';
 // import { Selector } from './components/selector/selector';
