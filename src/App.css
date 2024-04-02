@@ -23,7 +23,15 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 100% !important;
   }
+  #base-size-disclaimer{
+    display: block !important;
+  }
+}
+
+#base-size-disclaimer{
+  display: none;
 }
 
 .App-header {

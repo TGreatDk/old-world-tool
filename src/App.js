@@ -157,6 +157,7 @@ function App() {
           </div>
         </div>
         <div id='table' style={{width:'34%'}}>
+          <h1 id="base-size-disclaimer">Wheel table for base size: {baseWidth}*{baseLength}</h1>
           <table cellPadding='10'>
             <col>
             </col>
