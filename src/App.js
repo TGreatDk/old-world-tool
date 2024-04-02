@@ -58,6 +58,10 @@ function App() {
     }
   }
 
+  const _handlePrint = () => {    
+    window.print();    
+  }
+
   useEffect(() => setWidth(rankWidth*baseWidth),[rankWidth,baseWidth]);
   useEffect(() => setLength(rankDepth*baseLength),[rankDepth,baseLength]);
   useEffect(() => { calculateMoved(angle,true,width,length) }, [rankDepth, rankWidth, angle])
@@ -71,7 +75,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App">    
       <header className="App-header">
         Wheel tool
       </header>
@@ -161,7 +165,7 @@ function App() {
             <tr>
               <thead>
                 <th colSpan={1}>Angle</th>
-                <th colSpan={rankDepth}>Unit formation moved?</th>
+                <th colSpan={rankDepth}>Unit formation moved? <a onClick={_handlePrint}>🖨️</a></th>
               </thead>
               <thead>
                 <th colSpan={1}></th>
